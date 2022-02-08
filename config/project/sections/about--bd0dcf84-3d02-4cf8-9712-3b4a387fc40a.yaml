@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: about
+name: About
+propagationMethod: all
+siteSettings:
+  cc13e251-63bd-43e6-9a2a-623700a63e01: # Craft Test
+    enabledByDefault: true
+    hasUrls: true
+    template: about.twig
+    uriFormat: about
+type: single

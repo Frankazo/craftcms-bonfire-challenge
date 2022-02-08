@@ -1,0 +1,27 @@
+dateModified: 1644256170
+email:
+  fromEmail: frankluisravlo@gmail.com
+  fromName: 'Craft Test'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    9bd0d24b-5aa4-42c6-a492-55047d09f2a6: Subtitle # Subtitle
+    0980bef2-0084-459a-96f3-affdaa222dca: 'Craft Test' # Craft Test
+    432101b2-60c4-4648-85d0-ce89ccf2dad2: Common # Common
+    af927061-bfc5-4fa0-9186-b4c05429c93f: About # About
+    b453e6c7-4dcb-4711-b217-62ddd3351526: Home # Home
+    bd0dcf84-3d02-4cf8-9712-3b4a387fc40a: About # About
+    cc13e251-63bd-43e6-9a2a-623700a63e01: 'Craft Test' # Craft Test
+    d309aa79-2abc-449b-8ce0-21f361bebfe7: Home # Home
+system:
+  edition: solo
+  live: true
+  name: 'Craft Test'
+  schemaVersion: 3.7.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
