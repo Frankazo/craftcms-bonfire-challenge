@@ -27,7 +27,25 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 9bd0d24b-5aa4-42c6-a492-55047d09f2a6 # Subtitle
+            fieldUid: 22b10151-540d-449f-b8e2-c6a4cc4887e9 # Header Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: db1540ab-4b16-429c-95da-8f7bc67f41d5 # Header Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5a952317-2f39-4497-a59e-6b24ded4693d # Hero Image
             instructions: null
             label: null
             required: false

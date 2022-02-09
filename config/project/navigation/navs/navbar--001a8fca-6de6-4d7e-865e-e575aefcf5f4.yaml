@@ -1,0 +1,28 @@
+handle: navbar
+instructions: ''
+maxNodes: ''
+name: NavBar
+permissions:
+  craft\elements\Asset:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Category:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Tag:
+    enabled: ''
+    permissions: '*'
+  custom:
+    enabled: '1'
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: '1'
+propagateNodes: false
+siteSettings:
+  cc13e251-63bd-43e6-9a2a-623700a63e01: null # Craft Test
+sortOrder: 1
+structure:
+  maxLevels: null
+  uid: bba124b8-5c0f-4770-a5dc-d93abb711701

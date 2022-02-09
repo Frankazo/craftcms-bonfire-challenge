@@ -1,9 +1,9 @@
-columnSuffix: egddygip
+columnSuffix: mxdhqtxh
 contentColumnType: text
 fieldGroup: 432101b2-60c4-4648-85d0-ce89ccf2dad2 # Common
-handle: subtitle
-instructions: 'Enter a subtitle'
-name: Subtitle
+handle: headerTitle
+instructions: ''
+name: 'Header Title'
 searchable: false
 settings:
   byteLimit: null
