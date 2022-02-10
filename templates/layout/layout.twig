@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Bonfire Studios Challenge</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+
+		{% include 'navigation/nagivation.twig' %}
+		{% include 'home/home.twig' %}
+		{% include 'category/categories.twig' %}	
+		
+
+		{% block main %}
+			{# Overriding this with the extendee's templates content with the same block name #}
+		{% endblock %}
+
+	</body>
+</html>

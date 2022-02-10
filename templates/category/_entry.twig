@@ -1,0 +1,12 @@
+{% extends "index.twig" %}
+
+{% block main %}
+	<ul style="list-style: none;">
+
+        {% for box in craft.entries.section('boxes').relatedTo(category).all() %}
+        <li>{{ box.title }}</li>
+        {% endfor %}
+    </ul>
+
+    
+{% endblock %}

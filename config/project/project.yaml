@@ -1,4 +1,4 @@
-dateModified: 1644414955
+dateModified: 1644519445
 email:
   fromEmail: frankluisravlo@gmail.com
   fromName: 'Craft Test'
@@ -7,6 +7,7 @@ meta:
   __names__:
     001a8fca-6de6-4d7e-865e-e575aefcf5f4: NavBar # NavBar
     5a952317-2f39-4497-a59e-6b24ded4693d: 'Hero Image' # Hero Image
+    5c65eb74-25bf-4ea1-b4a6-28e6d9a00b83: 'Boxes Categories' # Boxes Categories
     22b10151-540d-449f-b8e2-c6a4cc4887e9: 'Header Title' # Header Title
     82c6f946-5b9a-4f1e-a9e6-770a2c76bdd7: Boxes # Boxes
     0980bef2-0084-459a-96f3-affdaa222dca: 'Craft Test' # Craft Test
@@ -16,7 +17,9 @@ meta:
     cc13e251-63bd-43e6-9a2a-623700a63e01: 'Craft Test' # Craft Test
     d309aa79-2abc-449b-8ce0-21f361bebfe7: Home # Home
     db1540ab-4b16-429c-95da-8f7bc67f41d5: 'Header Subtitle' # Header Subtitle
+    e31b7f96-999f-4685-b515-0b2bff1c87b9: 'Box Subtitle' # Box Subtitle
     e93490a4-1acf-4c1d-b62d-eb7127e450e6: Assets # Assets
+    ebbd4619-5032-4884-b341-d2788871984a: 'Category Field' # Category Field
 plugins:
   navigation:
     edition: standard

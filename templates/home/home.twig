@@ -1,0 +1,10 @@
+		{% set homeQuery = craft.entries().section('home') %}
+
+		{# Fetch the categories #}
+		{% set home = homeQuery.all() %}
+        {% for item in home %}
+			<div>
+				<h1>{{ item.headerTitle }}</h1>
+				<p>{{ item.headerSubtitle }}</p>
+			</div>
+        {% endfor %}

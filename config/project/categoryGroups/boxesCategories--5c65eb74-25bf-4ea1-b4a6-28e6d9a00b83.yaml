@@ -1,5 +1,6 @@
+defaultPlacement: end
 fieldLayouts:
-  184347f2-ce98-4330-9d9d-a96389f3b7fc:
+  03e4a702-0b8c-4a68-8c8a-e5ba731e1d5c:
     tabs:
       -
         elements:
@@ -23,18 +24,18 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\TitleField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
-handle: assets
-hasUrls: false
-name: Assets
-settings:
-  path: /Applications/MAMP/htdocs/craftcmsTest/web/assets
-sortOrder: 1
-titleTranslationKeyFormat: null
-titleTranslationMethod: null
-type: craft\volumes\Local
-url: ''
+handle: boxesCategories
+name: 'Boxes Categories'
+siteSettings:
+  cc13e251-63bd-43e6-9a2a-623700a63e01: # Craft Test
+    hasUrls: true
+    template: category/_entry
+    uriFormat: 'category/{slug}'
+structure:
+  maxLevels: null
+  uid: beb0d4b1-13d4-4470-aa39-73c05e4ceb26
