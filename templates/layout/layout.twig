@@ -9,10 +9,17 @@
 		<link rel="stylesheet" href="">
 	</head>
 	<body>
-
-		{% include 'navigation/nagivation.twig' %}
-		{% include 'home/home.twig' %}
-		{% include 'category/categories.twig' %}	
+		
+		{% set home = craft.entries().section('home').all() %}
+        {% for item in home %}
+		
+			<div style="background-image:url({{ item.heroImage.one().url() }});">
+				{% include 'navigation/nagivation.twig' %}
+				<h1>{{ item.headerTitle }}</h1>
+				<p>{{ item.headerSubtitle }}</p>
+				{% include 'category/categories.twig' %}	
+			</div>
+        {% endfor %}
 		
 
 		{% block main %}

@@ -4,7 +4,7 @@
 	<ul style="list-style: none;">
 
         {% for box in craft.entries.section('boxes').relatedTo(category).all() %}
-        <li>{{ box.title }}</li>
+        <li>{{ box.title }}, {{ box.boxSubtitle }} </li>
         {% endfor %}
     </ul>
 
