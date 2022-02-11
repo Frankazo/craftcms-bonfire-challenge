@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #eff1f5;
+}
+
+.container {
+  width: 85%;
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+.navbar {
+  padding: 10px;
+}
+
+.nav {
+  float: right;
+  margin: auto;
+  padding: 10px;
+}
+
+.nav-items {
+  list-style: none;
+}
+
+.nav-item {
+  display: inline;
+  padding-left: 15px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.header {
+  background: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.top {
+  z-index: 2;
+  position: relative;
+}
+
+.titles {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  color: #fff;
+  padding: 20px 0 20px 0;
+}
+
+.titles h1 {
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .titles h1 {
+    font-size: 30px;
+  }
+}
+.categories {
+  text-align: center;
+}
+
+.categ-list {
+  list-style: none;
+  padding: 25px;
+}
+
+.categ-list li {
+  display: inline;
+  padding-left: 20px;
+}
+
+.categ-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 20px;
+  grid-gap: 25px;
+  margin: 20px 0;
+}
+
+.grid-item {
+  background-color: #fff;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item h2 {
+  font-size: 25px;
+  padding-bottom: 15px;
+  font-weight: 400;
+}
+
+.grid-item p {
+  font-size: 13px;
+}
+
+.slider {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    display: none;
+  }
+
+  .slider {
+    display: block;
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    padding-top: 30px;
+  }
+
+  .slider-item {
+    background-color: #fff;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider-item h2 {
+    font-size: 25px;
+    padding-bottom: 15px;
+    font-weight: 400;
+  }
+
+  .slider-item p {
+    font-size: 13px;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

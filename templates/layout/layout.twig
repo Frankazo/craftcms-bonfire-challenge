@@ -6,25 +6,78 @@
 		<title>Bonfire Studios Challenge</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="">
-	</head>
+		<link rel="stylesheet" href="/css/styles.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		</head>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
 	<body>
 		
 		{% set home = craft.entries().section('home').all() %}
         {% for item in home %}
 		
-			<div style="background-image:url({{ item.heroImage.one().url() }});">
-				{% include 'navigation/nagivation.twig' %}
-				<h1>{{ item.headerTitle }}</h1>
-				<p>{{ item.headerSubtitle }}</p>
-				{% include 'category/categories.twig' %}	
+			<div class="header" style="background-image:url({{ item.heroImage.one().url() }});">
+			
+					<div class="container top">
+						<div class="navbar">
+							<img class="logo" src="https://placeholderlogo.com/img/placeholder-logo-1.png"  style="width: 150px;"/>
+							<div class="nav">
+								{% include 'navigation/nagivation.twig' %}
+							</div>
+						</div>
+
+						<div class="titles">
+							<h1>{{ item.headerTitle }}</h1>
+							<p>{{ item.headerSubtitle }}</p>
+						</div>
+
+						{% include 'category/categories.twig' %}	
+					</div>
+
+				<div class="overlay"></div>
 			</div>
         {% endfor %}
 		
 
 		{% block main %}
-			{# Overriding this with the extendee's templates content with the same block name #}
+			{# Overriding this with the extendee's templates content #}
 		{% endblock %}
 
+
+		<script>
+
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("slider-item");
+
+				if (n > slides.length) {
+					slideIndex = 1
+				}    
+				if (n < 1) {
+					slideIndex = slides.length
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slides[slideIndex-1].style.display = "block";  
+			}
+
+		</script>
 	</body>
 </html>

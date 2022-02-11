@@ -5,13 +5,15 @@
 {% set categories = myCategoryQuery.all() %}
 
 {# Display the navigation #}
-<ul>
-    <li>
-      <a href="/">All</a>
-    </li>
-  {% nav category in categories %}
-    <li>
-      <a href="{{ category.url }}">{{ category.title }}</a>
-    </li>
-  {% endnav %}
-</ul>
+<div class="container categories">
+  <ul class="categ-list">
+      <li>
+        <a href="/">All</a>
+      </li>
+    {% nav category in categories %}
+      <li>
+        <a href="{{ category.url }}">{{ category.title }}</a>
+      </li>
+    {% endnav %}
+  </ul>
+</div>
