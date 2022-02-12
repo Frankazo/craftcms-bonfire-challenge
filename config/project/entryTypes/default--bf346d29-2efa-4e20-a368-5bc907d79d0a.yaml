@@ -1,5 +1,5 @@
 fieldLayouts:
-  b76ab467-6942-4381-9913-574513c8164f:
+  b3ac4fdf-c900-4a2b-af74-5e859546cb70:
     tabs:
       -
         elements:
@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 22b10151-540d-449f-b8e2-c6a4cc4887e9 # Header Title
+            fieldUid: e31b7f96-999f-4685-b515-0b2bff1c87b9 # Box Subtitle
             instructions: null
             label: null
             required: false
@@ -36,16 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: db1540ab-4b16-429c-95da-8f7bc67f41d5 # Header Subtitle
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 5a952317-2f39-4497-a59e-6b24ded4693d # Hero Image
+            fieldUid: ebbd4619-5032-4884-b341-d2788871984a # Category Field
             instructions: null
             label: null
             required: false
@@ -55,11 +46,11 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: home
-hasTitleField: false
-name: Home
-section: b453e6c7-4dcb-4711-b217-62ddd3351526 # Home
+handle: default
+hasTitleField: true
+name: Default
+section: 82c6f946-5b9a-4f1e-a9e6-770a2c76bdd7 # Boxes
 sortOrder: 1
-titleFormat: '{section.name|raw}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

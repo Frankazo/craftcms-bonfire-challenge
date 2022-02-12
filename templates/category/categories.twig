@@ -1,0 +1,15 @@
+{# Create a category query with the 'group' parameter #}
+{% set myCategoryQuery = craft.categories().group('boxesCategories') %}
+
+{# Fetch the categories #}
+{% set categories = myCategoryQuery.all() %}
+
+{# Display the navigation #}
+<div class="container categories">
+  <div id="btns" class="categ-list">
+      <button class="btn" onclick="window.location.href='/'">All</button>
+    {% nav category in categories %}
+      <button class="btn" onclick="window.location.href='{{ category.url }}'">{{ category.title }}</button>
+    {% endnav %}
+  </div>
+</div>

@@ -1,17 +1,9 @@
+defaultPlacement: end
 fieldLayouts:
-  577890ec-6dde-4f66-8885-ed57ca13eaa9:
+  03e4a702-0b8c-4a68-8c8a-e5ba731e1d5c:
     tabs:
       -
         elements:
-          -
-            fieldUid: 9bd0d24b-5aa4-42c6-a492-55047d09f2a6 # Subtitle
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
           -
             autocapitalize: true
             autocomplete: false
@@ -32,16 +24,18 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\TitleField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
-handle: about
-hasTitleField: false
-name: About
-section: bd0dcf84-3d02-4cf8-9712-3b4a387fc40a # About
-sortOrder: 1
-titleFormat: '{section.name|raw}'
-titleTranslationKeyFormat: null
-titleTranslationMethod: site
+handle: boxesCategories
+name: 'Boxes Categories'
+siteSettings:
+  cc13e251-63bd-43e6-9a2a-623700a63e01: # Craft Test
+    hasUrls: true
+    template: category/_entry
+    uriFormat: 'category/{slug}'
+structure:
+  maxLevels: null
+  uid: beb0d4b1-13d4-4470-aa39-73c05e4ceb26

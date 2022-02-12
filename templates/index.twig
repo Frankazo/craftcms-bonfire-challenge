@@ -1,24 +1,37 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CraftCMS</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <p>Hello World!</p>
+{% extends "layout/layout" %}
+{% block main %}
+		<div class="container">
+			{% set boxes = 	craft.entries.section('boxes').orderBy('dateCreated ASC').all() %}
 
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-        </nav>
+			
+			<div class="grid">
+				{% for box in boxes %}
+					<div class="grid-item">
+						<div class="center">
+							<h2 class="h2">{{ box.title }}</h2>
+							<p class="p">{{ box.boxSubtitle }}</p>
 
-        <h1>{{ entry.title }}</h1>
-        <h2>{{ entry.subtitle }}</h2>
+							<button class="btn box-btn">View The Case Study</button>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
 
+			<div class="slider">
+				{% for box in boxes %}
+					<div class="slider-item">
+						<div class="center">
+							<h2>{{ box.title }}</h2>
+							<p>{{ box.boxSubtitle }}</p>
+						</div>
+						<button class="btn slider-btn">View The Case Study</button>
 
-    </body>
-</html>
+					</div>
+				{% endfor %}
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+
+		</div>
+
+{% endblock %}
