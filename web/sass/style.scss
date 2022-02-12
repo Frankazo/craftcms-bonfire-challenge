@@ -37,6 +37,14 @@ body {
   font-size: 30px;
   font-weight: 400;
 }
+
+@media only screen and (max-width: 500px) {
+  .logo {
+    font-size: 20px;
+    padding: 0;
+  }
+}
+
 // End Logo
 
 // Navigation styles
@@ -67,6 +75,20 @@ body {
 
 .nav-active {
   color: $accent !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav {
+    padding: 0;
+  }
+
+  .nav-item {
+    padding-left: 5px;
+  }
+
+  .nav-item a {
+    font-size: 17px;
+  }
 }
 
 // End Navigation styles
@@ -114,6 +136,16 @@ body {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .titles h1 {
+    font-size: 25px;
+  }
+
+  .titles p {
+    font-size: 12px;
+  }
+}
+
 // End Header styles
 
 // Categories styles
@@ -149,6 +181,16 @@ body {
   border-radius: 2px;
   color: $main !important;
   padding: 16px !important;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+  .categories {
+    width: 100%;
+  }
+  .categ-list button {
+    font-size: 10px;
+  }
 }
 
 // End Categories styles

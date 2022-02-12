@@ -27,6 +27,12 @@ body {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 500px) {
+  .logo {
+    font-size: 20px;
+    padding: 0;
+  }
+}
 .navbar {
   padding: 40px 0;
 }
@@ -56,6 +62,19 @@ body {
   color: #fdecca !important;
 }
 
+@media only screen and (max-width: 500px) {
+  .nav {
+    padding: 0;
+  }
+
+  .nav-item {
+    padding-left: 5px;
+  }
+
+  .nav-item a {
+    font-size: 17px;
+  }
+}
 .header {
   background: no-repeat;
   background-size: cover;
@@ -96,6 +115,15 @@ body {
     font-size: 30px;
   }
 }
+@media only screen and (max-width: 500px) {
+  .titles h1 {
+    font-size: 25px;
+  }
+
+  .titles p {
+    font-size: 12px;
+  }
+}
 .categories {
   max-width: 550px;
 }
@@ -127,8 +155,18 @@ body {
   border-radius: 2px;
   color: #696579 !important;
   padding: 16px !important;
+  font-weight: bold;
 }
 
+@media only screen and (max-width: 500px) {
+  .categories {
+    width: 100%;
+  }
+
+  .categ-list button {
+    font-size: 10px;
+  }
+}
 .grid {
   display: grid;
   grid-template-columns: auto auto auto;
