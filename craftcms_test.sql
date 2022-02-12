@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Feb 12, 2022 at 10:02 PM
+-- Generation Time: Feb 12, 2022 at 11:31 PM
 -- Server version: 5.7.34
 -- PHP Version: 7.4.21
 
@@ -1274,7 +1274,7 @@ CREATE TABLE `craft_plugins` (
 --
 
 INSERT INTO `craft_plugins` (`id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `licensedEdition`, `installDate`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(1, 'navigation', '1.4.24', '1.0.21', 'trial', NULL, '2022-02-09 01:19:16', '2022-02-09 01:19:16', '2022-02-11 14:23:25', '52d544f6-b493-4b26-aca5-05d439ac4844');
+(1, 'navigation', '1.4.24', '1.0.21', 'trial', NULL, '2022-02-09 01:19:16', '2022-02-09 01:19:16', '2022-02-12 22:54:48', '52d544f6-b493-4b26-aca5-05d439ac4844');
 
 -- --------------------------------------------------------
 
@@ -1740,6 +1740,7 @@ CREATE TABLE `craft_resourcepaths` (
 --
 
 INSERT INTO `craft_resourcepaths` (`hash`, `path`) VALUES
+('147c4534', '@app/web/assets/edituser/dist'),
 ('16e6ecd7', '@app/web/assets/elementresizedetector/dist'),
 ('1702cbe7', '@app/web/assets/elementresizedetector/dist'),
 ('1856a491', '@app/web/assets/picturefill/dist'),
@@ -1787,6 +1788,7 @@ INSERT INTO `craft_resourcepaths` (`hash`, `path`) VALUES
 ('97222827', '@app/web/assets/iframeresizer/dist'),
 ('9a50be6c', '@app/web/assets/fileupload/dist'),
 ('9bb4995c', '@app/web/assets/fileupload/dist'),
+('9c08de48', '@app/web/assets/updateswidget/dist'),
 ('9decf978', '@app/web/assets/updateswidget/dist'),
 ('a2b29c26', '@app/web/assets/recententries/dist'),
 ('a356bb16', '@app/web/assets/recententries/dist'),
@@ -1795,6 +1797,7 @@ INSERT INTO `craft_resourcepaths` (`hash`, `path`) VALUES
 ('a523d1b0', '@app/web/assets/pluginstore/dist'),
 ('a5ca9de2', '@app/web/assets/d3/dist'),
 ('ba2589e5', '@app/web/assets/login/dist'),
+('bbc1aed5', '@app/web/assets/login/dist'),
 ('be1b9c9b', '@app/web/assets/cp/dist'),
 ('bfffbbab', '@app/web/assets/cp/dist'),
 ('c2d4ef04', '@app/web/assets/garnish/dist'),
@@ -2021,7 +2024,7 @@ INSERT INTO `craft_sessions` (`id`, `userId`, `token`, `dateCreated`, `dateUpdat
 (1, 1, 'Q7qwZucEgNSji1RfT_i_k3aAH-uQqQkgkagJE5_QA2jrn0YgWHgRfTciOoZlv2oPlsXTY5BLjOOfvW2TyGLCm4vDScmdQcqHD1Rr', '2022-02-07 14:42:39', '2022-02-07 20:38:01', '29b04095-3a1b-489e-8584-0da3a7180783'),
 (2, 1, 'jJPh4NqA58vu-t5bOkRgnM0pjMrFc6sOwmnkUPDmcUDIZVILbazqUQXYSht47Z5sfMw3akKOyLgKFVKS12ThXdIsMr4uqi-X7Oug', '2022-02-07 20:38:01', '2022-02-09 00:57:23', '29da725c-d6c6-41ed-96d2-8add1ea018c4'),
 (3, 1, '5sFACPkrJROjX-MkZfv4diXg7-iEuOf2cGt3P12jSeQmHYee_LG8R5WV43vjPgBwyKWTKEwwNRjzYRAIOT6KssXVFz1Z2_Utpkvj', '2022-02-09 00:57:23', '2022-02-09 23:33:11', 'e131a5d4-5a4f-4d70-bf2e-489adf30fd38'),
-(4, 1, 'kiGEBTTmZL9EAUvlJx5NVJ2K4_Xnk7yzRrBpxu5jWFp-tGSOjENx01U6bIvbqjWkMmXaLTLaVPz5VnllaBTbCoRhm88rhXeN7jti', '2022-02-09 23:33:11', '2022-02-12 18:27:09', '60bd410f-0259-4b44-aebf-28ebfe71cb94');
+(4, 1, 'R2ZAC9Ntyw2RBSWCgye4W2NWgALdrzTrCB193-d8cbQIg1FW2lnDFY3Zeba0jRcuHGI6w1_NLW0sMm4oBFfgFj408MpYa4rJq0X-', '2022-02-12 23:30:51', '2022-02-12 23:30:51', '4782deb6-045c-499f-88f3-65caf5840889');
 
 -- --------------------------------------------------------
 
@@ -2385,7 +2388,7 @@ CREATE TABLE `craft_users` (
 --
 
 INSERT INTO `craft_users` (`id`, `username`, `photoId`, `firstName`, `lastName`, `email`, `password`, `admin`, `locked`, `suspended`, `pending`, `lastLoginDate`, `lastLoginAttemptIp`, `invalidLoginWindowStart`, `invalidLoginCount`, `lastInvalidLoginDate`, `lockoutDate`, `hasDashboard`, `verificationCode`, `verificationCodeIssuedDate`, `unverifiedEmail`, `passwordResetRequired`, `lastPasswordChangeDate`, `dateCreated`, `dateUpdated`, `uid`) VALUES
-(1, 'admin', NULL, NULL, NULL, 'frankluisravlo@gmail.com', '$2y$13$Ii8N6MjP5UGeSrqVJdUEcuSd6f8yVzH/n6lOGIfQsF6tatqHKM3Ey', 1, 0, 0, 0, '2022-02-09 23:33:11', NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 0, '2022-02-07 14:39:42', '2022-02-07 14:39:42', '2022-02-09 23:33:11', '53c9acfd-6045-489e-9487-1688ed5251d7');
+(1, 'admin', NULL, NULL, NULL, 'frankluisravlo@gmail.com', '$2y$13$FfVKvo1W1N5Gsba3c19r8uz.x9R5NRQgRu8jmXvOjVCStg1sKGcoW', 1, 0, 0, 0, '2022-02-12 23:30:51', NULL, NULL, NULL, '2022-02-12 23:27:30', NULL, 1, '$2y$13$hXz6AviyH8A/gHOrm1AkdeeC7SK86UWZFlzFWmS5WNe3p5n4G56Gy', '2022-02-12 23:20:36', NULL, 0, '2022-02-07 14:39:42', '2022-02-07 14:39:42', '2022-02-12 23:30:51', '53c9acfd-6045-489e-9487-1688ed5251d7');
 
 -- --------------------------------------------------------
 

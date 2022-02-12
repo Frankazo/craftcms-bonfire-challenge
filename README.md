@@ -27,28 +27,6 @@
 
 #
 
-### Project Setup:
-
-- Before setting up the Craft cms project I created a MySQL database with the help of MAMP
-
-- Then to create the project I use Composer and runned the following command:
-
-```bash
-composer create-project craftcms/craft craftcmtest
-```
-
-- That command downloads and installs CraftCMS, and then the interface asks for the following information: (_This configuration can be found in the .env file_)
-  - Database: MySQL (MAMP)
-  - IP Address: 127.0.0.1 (Localhost)
-  - Port: 8889 (MAMP default, sometimes 3306)
-  - Username: root
-  - password: root
-  - Database Name: craftcms_test (Created previously)
-
-Then I followed the prompts to create an admin account to access Craftcms
-
-#
-
 ## Installation
 
 If you want to install the site locally, follow these instructions:
@@ -59,9 +37,10 @@ If you want to install the site locally, follow these instructions:
    git clone git@github.com:Frankazo/craftcms-bonfire-challenge.git
    ```
 
-2. Run `composer install` within the clone:
+2. Then move inside the folder and install dependencies:
 
    ```bash
+   cd craftcms-bonfire-challenge
    composer install
    ```
 
@@ -84,11 +63,47 @@ If you want to install the site locally, follow these instructions:
 
 6. Create a new MySQL database called `craftcms_test`, and import `craftcms_test.sql` into it.
 
+7. Create a new virtual host with the hostname `http://localhost:8888` that points to the `craftcms-bonfire-challenge/web/` folder.
+
 Now point your browser at `http://localhost:8888`. You should see the Happy Lager homepage.
 
 ## Logging in
 
-The Craft Control Panel is located at `http://localhost:8888`. You can log in with the following credentials:
+The Craft Control Panel is located at `http://localhost:8888/admin`. You can log in with the following credentials:
 
 - Username: `admin`
-- Password: `password`
+- Password: `secret`
+
+#
+
+## Screenshots of Development Phase:
+
+## Basic Structure
+
+![Basic Structure](https://i.imgur.com/x8kdZYh.png)
+
+#
+
+![Basic Structure](https://i.imgur.com/sqdMZPJ.png)
+
+#
+
+![Basic Structure](https://i.imgur.com/46dlTEG.png)
+
+#
+
+## Pc View
+
+![Basic Structure](https://i.imgur.com/ZJO5piR.png)
+
+#
+
+## Tablet View
+
+![Basic Structure](https://i.imgur.com/RmAwe0d.png)
+
+#
+
+## Mobile View
+
+![Basic Structure](https://i.imgur.com/4nbkSpS.png)
