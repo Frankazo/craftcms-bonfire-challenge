@@ -25,7 +25,7 @@
 			
 					<div class="container top">
 						<div class="navbar">
-							<img class="logo" src="https://placeholderlogo.com/img/placeholder-logo-1.png"  style="width: 150px;"/>
+							<h1 class="logo">LOGO<span class="accent">DESIGN</span></h1>
 							<div class="nav">
 								{% include 'navigation/nagivation.twig' %}
 							</div>
@@ -50,7 +50,7 @@
 
 
 		<script>
-
+			// Slider
 			var slideIndex = 1;
 			showSlides(slideIndex);
 
@@ -76,6 +76,23 @@
 					slides[i].style.display = "none";  
 				}
 				slides[slideIndex-1].style.display = "block";  
+			}
+
+ 
+ 			// Active Category
+			var nav = document.getElementById('btns');
+			var btn = nav.getElementsByClassName('btn');
+			var current = window.location.href.split('/');
+
+			if (current[3] == "") {
+				btn[0].className = "btn-active";
+			} else {
+				for (var i = 0; i < btn.length; i++) {
+					if (btn[i].outerText == current[4].toUpperCase()) {
+							btn[i].className = "btn-active";
+
+					}
+				}
 			}
 
 		</script>

@@ -13,8 +13,22 @@ body {
   margin: 0 auto;
 }
 
-.navbar {
+.accent {
+  color: #fdecca;
+}
+
+.logo {
+  color: #fff;
+  display: inline;
+  float: left;
+  margin: auto;
   padding: 10px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.navbar {
+  padding: 40px 0;
 }
 
 .nav {
@@ -36,6 +50,10 @@ body {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
+}
+
+.nav-active {
+  color: #fdecca !important;
 }
 
 .header {
@@ -64,7 +82,7 @@ body {
   max-width: 550px;
   margin: auto;
   color: #fff;
-  padding: 20px 0 20px 0;
+  padding: 40px 0;
 }
 
 .titles h1 {
@@ -78,24 +96,36 @@ body {
   }
 }
 .categories {
-  text-align: center;
+  max-width: 550px;
 }
 
 .categ-list {
-  list-style: none;
-  padding: 25px;
+  padding: 20px 0;
 }
 
-.categ-list li {
-  display: inline;
-  padding-left: 20px;
-}
-
-.categ-list li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
+.categ-list button {
+  background-color: #696579;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  float: left;
+  width: 33%;
+  padding: 15px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.categ-list:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-active {
+  background-color: #fdecca !important;
+  border-radius: 2px;
+  color: #696579 !important;
+  padding: 16px !important;
 }
 
 .grid {

@@ -6,14 +6,10 @@
 
 {# Display the navigation #}
 <div class="container categories">
-  <ul class="categ-list">
-      <li>
-        <a href="/">All</a>
-      </li>
+  <div id="btns" class="categ-list">
+      <button class="btn" onclick="window.location.href='/'">All</button>
     {% nav category in categories %}
-      <li>
-        <a href="{{ category.url }}">{{ category.title }}</a>
-      </li>
+      <button class="btn" onclick="window.location.href='{{ category.url }}'">{{ category.title }}</button>
     {% endnav %}
-  </ul>
+  </div>
 </div>

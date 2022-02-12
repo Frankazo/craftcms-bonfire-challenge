@@ -46,3 +46,5 @@ $ composer create-project craftcms/craft craftcmtest
   - Database Name: craftcms_test (Created previously)
 
 Then I followed the prompts to create an admin account to access Craftcms
+
+## Some oustanding issues

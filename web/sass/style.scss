@@ -22,9 +22,24 @@ body {
   margin: 0 auto;
 }
 
+.accent {
+  color: $accent;
+}
+// Logo
+.logo {
+  color: $white;
+  display: inline;
+  float: left;
+  margin: auto;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 400;
+}
+// End Logo
+
 // Navigation styles
 .navbar {
-  padding: 10px;
+  padding: 40px 0;
 }
 
 .nav {
@@ -46,6 +61,10 @@ body {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
+}
+
+.nav-active {
+  color: $accent !important;
 }
 
 // End Navigation styles
@@ -78,7 +97,7 @@ body {
   max-width: 550px;
   margin: auto;
   color: #fff;
-  padding: 20px 0 20px 0;
+  padding: 40px 0;
 }
 
 .titles h1 {
@@ -97,24 +116,36 @@ body {
 // Categories styles
 
 .categories {
-  text-align: center;
+  max-width: 550px;
 }
 
 .categ-list {
-  list-style: none;
-  padding: 25px;
+  padding: 20px 0;
 }
 
-.categ-list li {
-  display: inline;
-  padding-left: 20px;
-}
-
-.categ-list li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
+.categ-list button {
+  background-color: $main;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  float: left;
+  width: 33%;
+  padding: 15px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.categ-list:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-active {
+  background-color: $accent !important;
+  border-radius: 2px;
+  color: $main !important;
+  padding: 16px !important;
 }
 
 // End Categories styles
