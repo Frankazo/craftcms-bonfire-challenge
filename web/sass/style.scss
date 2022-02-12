@@ -5,6 +5,8 @@ $bg: #eff1f5;
 $main: #696579;
 $accent: #fdecca;
 
+$gray: #aaaeb6;
+
 // end Variables
 
 * {
@@ -101,6 +103,7 @@ body {
 }
 
 .titles h1 {
+  font-family: "Source Serif 4", sans-serif;
   font-size: 40px;
   padding-bottom: 15px;
 }
@@ -161,7 +164,7 @@ body {
 }
 
 .grid-item {
-  background-color: #fff;
+  background-color: $white;
   text-align: center;
   margin: auto;
   width: 100%;
@@ -169,21 +172,64 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 0px solid #d83a6a;
+  border-radius: 2px;
 }
 
 .grid-item h2 {
   font-size: 25px;
   padding-bottom: 15px;
   font-weight: 400;
+  color: $gray;
 }
 
 .grid-item p {
   font-size: 13px;
+  font-weight: 400;
+  color: $main;
 }
 
 .slider {
   display: none;
 }
+
+.box-btn {
+  background-color: $main;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0;
+}
+
+// @media (hover: hover) {
+//   .grid-item {
+//     background-color: $white;
+//     text-align: center;
+//     margin: auto;
+//     width: 100%;
+//     height: 300px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-top: 0px solid #d83a6a;
+//     border-radius: 2px;
+//   }
+
+//   .grid-item h2 {
+//     font-size: 25px;
+//     padding-bottom: 15px;
+//     font-weight: 400;
+//     color: $gray;
+//   }
+
+//   .box-btn {
+//     opacity: 0;
+//   }
+// }
 
 // Hide Grid show Slider
 @media only screen and (max-width: 768px) {
@@ -200,27 +246,41 @@ body {
   }
 
   .slider-item {
-    background-color: #fff;
+    background-color: $white;
     text-align: center;
-    margin: auto;
     width: 100%;
     height: 300px;
-    display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
+    border-top: 2px solid #d83a6a;
+    border-radius: 2px;
   }
 
   .slider-item h2 {
     font-size: 25px;
     padding-bottom: 15px;
     font-weight: 400;
+    color: #caa97d;
   }
 
   .slider-item p {
     font-size: 13px;
+    font-weight: 400;
+    color: $main;
   }
 
-  /* Next & previous buttons */
+  .slider-btn {
+    background-color: $main;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
   .prev,
   .next {
     cursor: pointer;
@@ -236,17 +296,21 @@ body {
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
-
-  /* Position the "next button" to the right */
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
 
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+  .prev:active,
+  .next:active {
     background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  @media (hover: hover) {
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
   }
 }
 

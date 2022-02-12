@@ -2,15 +2,17 @@
 
 {% block main %}
     <div class="container">
-    	{% set boxes = 	craft.entries.section('boxes').relatedTo(category).all() %}
+    	{% set boxes = 	craft.entries.section('boxes').relatedTo(category).orderBy('dateCreated ASC').all() %}
 
         <div class="grid">
             {% for box in boxes %}
                 <div class="grid-item">
                     <div class="center">
-                        <h2>{{ box.title }}</h2>
-                        <p>{{ box.boxSubtitle }}</p>
-                    </div>
+                        <h2 class="h2">{{ box.title }}</h2>
+                        <p class="p">{{ box.boxSubtitle }}</p>
+
+                        <button class="btn box-btn">View The Case Study</button>
+                    </div>                    
                 </div>
             {% endfor %}
         </div>
@@ -22,6 +24,7 @@
                         <h2>{{ box.title }}</h2>
                         <p>{{ box.boxSubtitle }}</p>
                     </div>
+					<button class="btn slider-btn">View The Case Study</button>
                 </div>
             {% endfor %}
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
