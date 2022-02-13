@@ -76,6 +76,17 @@ The Craft Control Panel is located at `http://localhost:8888/admin`. You can log
 
 #
 
+## Technologies Used
+
+- TWIG
+- GSAP
+- MYSQL (MAMP)
+- JavaScript
+- HTML
+- SASS/CSS
+
+#
+
 ## Screenshots of Development Phase:
 
 ## Basic Structure
@@ -107,3 +118,9 @@ The Craft Control Panel is located at `http://localhost:8888/admin`. You can log
 ## Mobile View
 
 ![Basic Structure](https://i.imgur.com/4nbkSpS.png)
+
+#
+
+## Possible future updates
+
+- Collapsible mobile menu
