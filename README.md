@@ -124,3 +124,8 @@ The Craft Control Panel is located at `http://localhost:8888/admin`. You can log
 ## Possible future updates
 
 - Collapsible mobile menu
+
+## Resources and Docs
+
+- CraftCms Docs: https://craftcms.com/docs/3.x/
+- GreenSock Docs (GSP): https://greensock.com/docs/
